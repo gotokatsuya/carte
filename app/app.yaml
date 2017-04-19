@@ -1,0 +1,41 @@
+application: carte-165114
+module: default
+version: 1
+runtime: go
+api_version: go1
+default_expiration: "1d"
+threadsafe: true
+instance_class: F1
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: 1
+  min_pending_latency: 3000ms
+  max_pending_latency: automatic
+  max_concurrent_requests: 20
+handlers:
+- url: /
+  static_files: static/html/index.html
+  upload: static/html/index.h
+- url: /(index.html|image.html)
+  static_files: static/html/\1
+  upload: static/html/.*
+- url: /css
+  static_dir: static/css
+- url: /js
+  static_dir: static/js
+- url: /fonts
+  static_dir: static/fonts
+- url: /images/(.*\.(gif|png|jpg|svg))$
+  static_files: static/images/\1
+  upload: static/images/.*\.(gif|png|jpg|svg)$
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+- url: /robots\.txt
+  static_files: robots.txt
+  upload: robots\.txt
+- url: /sitemap\.xml
+  static_files: sitemap.xml
+  upload: sitemap\.xml
+- url: /.*
+  script: _go_app
