@@ -28,6 +28,7 @@ $(document).ready(function () {
       map = new google.maps.Map(document.getElementById('map'), mapOptions);
       marker = new google.maps.Marker({
         position: map.getCenter(),
+        draggable: true,
         map: map
       });
 
@@ -60,6 +61,7 @@ $(document).ready(function () {
       
       marker = new google.maps.Marker({
         position: map.getCenter(),
+        draggable: true,
         map: map
       });
 
