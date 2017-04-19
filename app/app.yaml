@@ -16,7 +16,7 @@ handlers:
 - url: /
   static_files: static/html/index.html
   upload: static/html/index.h
-- url: /(index.html|image.html)
+- url: /(index.html|image.html|map.html)
   static_files: static/html/\1
   upload: static/html/.*
 - url: /css
