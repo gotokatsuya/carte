@@ -1,51 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset=utf-8>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>index sample</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="/favicon.ico">
-
-</head>
-<body>
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Brand</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="/">HOME</a></li>
-            <li><a href="image.html">画像表示</a></li>
-            <li><a href="map.html">地図表示</a></li>
-        </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-    </nav>
-
-    <div class="container">
-        <div class="jumbotron">
-            <h1>index sample</h1>
-        </div>
-    </div>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-</body>
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>map sample</title>
+        <link href="/css/index.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.ico">
+    </head>
+  <body>
+  	<form>
+		<input id="latitude" type="text" value="" placeholder="緯度">
+		<input id="longitude" type="text" value="" placeholder="経度">
+		<input id="address" type="text" value="" placeholder="住所入力">
+		<input type="button" value="検索" id="geocode">
+	</form>
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWN9KEs66zX5q70wRPbXaCqTZIHs_mqeM&libraries=drawing"></script>
+ 	<script src="/js/index.js"></script>
+  </body>
 </html>

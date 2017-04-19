@@ -15,8 +15,8 @@ automatic_scaling:
 handlers:
 - url: /
   static_files: static/html/index.html
-  upload: static/html/index.h
-- url: /(index.html|image.html|map.html)
+  upload: static/html/index.html
+- url: /(index.html)
   static_files: static/html/\1
   upload: static/html/.*
 - url: /css
