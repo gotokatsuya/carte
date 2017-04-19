@@ -28,7 +28,7 @@ $(document).ready(function () {
     radius: 3000
   });
   
-  $("#geocode").click(function(){
+  $("#search").click(function(){
     
     var address = $("#address").val();
     
