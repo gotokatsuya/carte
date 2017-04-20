@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://[[applicationid]].appspot.com/sitemap.xml
+Sitemap: https://carte-165114.appspot.com/sitemap.xml

@@ -39,3 +39,4 @@ handlers:
   upload: sitemap\.xml
 - url: /.*
   script: _go_app
+  secure: always

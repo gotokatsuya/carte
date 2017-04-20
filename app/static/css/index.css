@@ -1,16 +1,27 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     font: 14px;
 }
-#address {
-    margin-top: 4px;
+
+#address-label {
+    margin-top: 8px;
+}
+
+#radius-label {
+    margin-top: 8px;
 }
 
 #search {
-    margin-top: 12px;
+    margin-top: 16px;
+}
+
+#search-hint {
+    display: none;
+    margin-top: 16px;    
 }
 
 #map {
