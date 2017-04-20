@@ -66,7 +66,7 @@ $(document).ready(function () {
           searchHint.show('normal');
           setTimeout(function () {
             searchHint.hide('slow');
-          }, 1500);
+          }, 3000);
           lookSearchHint = true
         }
 
